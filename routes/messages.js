@@ -27,7 +27,7 @@ async function setupMessageRoutes(db) {
         if (selectedMessageId == null ||
             typeof selectedMessageId !== 'string' ||
             selectedMessageId.length === 0)
-            return next(new ExpressError("Message ID must have an input like /<ID>/read", 400));
+            return next(new ExpressError("Message ID must have an input like /<ID>", 400));
         if (isNaN(selectedMessageId) ||
             !isFinite(selectedMessageId))
             return next(new ExpressError("Message ID must be a number.", 400));
