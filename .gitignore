@@ -1,0 +1,4 @@
+node_modules/
+demoCode/
+.vscode/
+.env
